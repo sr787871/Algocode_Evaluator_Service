@@ -19,5 +19,11 @@ app.listen(serverConfig.PORT,()=>{
         company : "XYZ",
         position : "Intern",
         location : "Delhi | Remote", 
-    });
+    },2);
+    sampleQueueProducer('SampleJob',{
+        name : "Hello",
+        company : "XYZ",
+        position : "Intern",
+        location : "Delhi | Remote", 
+    },1);
 });
